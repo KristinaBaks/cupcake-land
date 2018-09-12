@@ -17,8 +17,10 @@ function toggleNavigation() {
         }
     })
     navList.addEventListener('click', function(){
-        navIcon.className = 'nav-icon';
-        nav.style.display = 'none';
+        if(navIcon.className == 'nav-icon close-icon') {
+            navIcon.className = 'nav-icon';
+            nav.style.display = 'none';
+        }
     })
 }
 //------- SLIDESHOW ------------
